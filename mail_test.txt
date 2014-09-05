@@ -1,0 +1,111 @@
+ ################### Logwatch 7.3.6 (05/19/07) ####################
+        Processing Initiated: Thu Sep  4 05:30:03 2014
+        Date Range Processed: yesterday
+                              ( 2014-Sep-03 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host:
+  ##################################################################
+
+ --------------------- httpd Begin ------------------------
+
+ Requests with error response codes
+    400 Bad Request
+       /: 7 Time(s)
+    404 Not Found
+       /CasinoLoader/index.php: 1 Time(s)
+       /FCKeditor/editor/filemanager/browser/defa ... ctors/test.html: 1 Time(s)
+       /FCKeditor/editor/filemanager/upload/test.html: 1 Time(s)
+       /Panel/index.php: 1 Time(s)
+       /a/index.php: 1 Time(s)
+       /admin.php: 1 Time(s)
+       /admin/FCKeditor/editor/filemanager/browse ... ctors/test.html: 1 Time(s)
+       /admin/FCKeditor/editor/filemanager/connectors/test.html: 1 Time(s)
+       /admin/FCKeditor/editor/filemanager/upload/test.html: 1 Time(s)
+       /admin/editor/filemanager/browser/default/ ... ctors/test.html: 1 Time(s)
+       /admin/editor/filemanager/upload/test.html: 1 Time(s)
+       /admin/editors/fckeditor/editor/filemanager/upload/test.html: 1 Time(s)
+       /admin/fckeditor/editor/filemanager/connectors/test.html: 1 Time(s)
+       /administrator/: 1 Time(s)
+       /apple-touch-icon-precomposed.png: 1 Time(s)
+       /apple-touch-icon.png: 1 Time(s)
+       /dexter/index.php: 1 Time(s)
+       /editors/fckeditor/editor/filemanager/upload/test.html: 1 Time(s)
+       /favicon.ico: 1 Time(s)
+       /fckeditor/editor/filemanager/browser/defa ... ctors/test.html: 1 Time(s)
+       /fckeditor/editor/filemanager/connectors/test.html: 1 Time(s)
+       /fckeditor/editor/filemanager/upload/test.html: 1 Time(s)
+       /fk/index.php: 1 Time(s)
+       /robots.txt: 9 Time(s)
+       /test/index.php: 1 Time(s)
+       /w19218317418621031041543/index.php: 1 Time(s)
+       /wp-login.php: 3 Time(s)
+       http://www.k2proxy.com//hello.html: 1 Time(s)
+
+ ---------------------- httpd End -------------------------
+
+
+ --------------------- Inotify Begin ------------------------
+
+   /etc/prelink.cache.0YQ63l CREATE 2014/09/03-04:31:08
+   /etc/prelink.cache.0YQ63l MODIFY 2014/09/03-04:31:08
+   /etc/prelink.cache.0YQ63l MODIFY 2014/09/03-04:31:08
+   /etc/prelink.cache.0YQ63l MOVED_FROM 2014/09/03-04:31:08
+   /etc/prelink.cache MOVED_TO 2014/09/03-04:31:08
+
+ ---------------------- Inotify End -------------------------
+
+
+ --------------------- Postfix Begin ------------------------
+
+    3.647K  Bytes accepted                             3,735
+    3.647K  Bytes delivered                            3,735
+ ========   ================================================
+
+        1   Accepted                                 100.00%
+ --------   ------------------------------------------------
+        1   Total                                    100.00%
+ ========   ================================================
+
+        1   Removed from queue
+        1   Sent via SMTP
+
+
+
+ ---------------------- Postfix End -------------------------
+
+
+ --------------------- Connections (secure-log) Begin ------------------------
+
+
+ Userhelper executed applications:
+    root -> chkrootkit  as root:  1 Time(s)
+
+ ---------------------- Connections (secure-log) End -------------------------
+
+
+ --------------------- SSHD Begin ------------------------
+
+
+ Refused incoming connections:
+       76.164.203.218 (76.164.203.218): 1 Time(s)
+
+ ---------------------- SSHD End -------------------------
+
+
+ --------------------- Disk Space Begin ------------------------
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/vda3        97G  2.1G   90G   3% /
+ /dev/vda1       243M   53M  178M  23% /boot
+
+
+ ---------------------- Disk Space End -------------------------
+
+
+ ###################### Logwatch End #########################
+
+
+
+
