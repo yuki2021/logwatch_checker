@@ -46,8 +46,8 @@ class splitMailText {
 
             preg_match($protocol_split_start, $temp_str, $matchs);
             if(!empty($matchs[0])) {
-                $protocol_type = trim($matchs[0], '--------------------- ');
-                $protocol_type = trim($protocol_type, ' Begin ------------------------');
+                $protocol_type = str_replace('--------------------- ', '', $matchs[0]);
+                $protocol_type = str_replace(' Begin ------------------------', '', $protocol_type);
             } else {
                 $protocol_type = 'unknown';
             }
