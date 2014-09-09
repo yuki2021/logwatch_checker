@@ -41,10 +41,22 @@ class splitMailText {
 
         $temp_str = $mail_text;
 
+        $i=0;
         while(true) {
+
+            preg_match($protocol_split_start, $temp_str, $matchs);
+            if(!empty($matchs[0])) {
+                $protocol_type = trim($matchs[0], '--------------------- ');
+                $protocol_type = trim($protocol_type, ' Begin ------------------------');
+            } else {
+                $protocol_type = 'unknown';
+            }
+            $protocol_parts[$i]['type'] = $protocol_type;
+
             $str_parts1 = preg_split($protocol_split_start, $temp_str, 2);
             $str_parts2 = preg_split($protocol_split_end, $str_parts1[1], 2);
-            $protocol_parts[] = $str_parts2[0];
+            $protocol_parts[$i]['param'] = $str_parts2[0];
+            $i++;
             if(preg_match($protocol_split_start, $str_parts2[1]) !== 1) break;
             $temp_str = $str_parts2[1];
         }
